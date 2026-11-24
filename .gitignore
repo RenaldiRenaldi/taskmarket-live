@@ -1,0 +1,4 @@
+node_modules/
+shot-*.png
+scripts/shot.mjs
+scripts/test-interact.mjs
