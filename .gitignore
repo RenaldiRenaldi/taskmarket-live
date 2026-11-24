@@ -1,4 +1,5 @@
 node_modules/
+.gh-pages/
 shot-*.png
 scripts/shot.mjs
 scripts/test-interact.mjs

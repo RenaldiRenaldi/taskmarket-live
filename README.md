@@ -34,8 +34,23 @@ from your browser.
 - `scripts/build.mjs` — renders `public/index.html` from `public/data.json`
   (charts are pre-rendered as inline SVG at build time).
 - `scripts/og-card.mjs` — renders the `public/og.png` share card.
-- `.github/workflows/update.yml` — runs fetch + build every hour and deploys
-  to GitHub Pages.
+- `scripts/refresh-pages.sh` — fetch + build + commit the snapshot to `main`
+  + push the built site to the `gh-pages` branch (GitHub Pages serves from
+  `gh-pages`). Run it hourly; see below.
+- `.github/workflows/update.yml` is kept as `docs/github-action-update.yml.example`
+  (the repo's deploy token cannot push workflow files, so Actions is documented
+  for Taskmarket to enable themselves if they prefer it over the hook refresh).
+
+## Refresh (hourly)
+
+The page must refresh at least hourly. A systemd timer cannot do it on this
+host: the VM's egress proxy credentials rotate per shell session and die
+within hours, so a timer's fetch fails (verified 2026-11-25 — the running
+Forge watcher's proxy was dead and it had logged nothing for 52 minutes).
+Instead, the `overnight-watch` hook (which runs in a live shell with fresh
+credentials) fires an hourly `taskmarket_live_refresh` trigger; the woken
+agent runs `scripts/refresh-pages.sh` and verifies the live site. The script
+itself is also the manual refresh: `./scripts/refresh-pages.sh`.
 
 ## One-command deploy
 
