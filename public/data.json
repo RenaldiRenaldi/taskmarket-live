@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T19:55:39.355Z",
+  "fetchedAt": "2026-11-24T19:56:30.981Z",
   "platform": {
     "stats": {
       "registeredWorkers": 148418,
@@ -157,7 +157,7 @@
           "tasksCreated": 51,
           "rewardVolume": "172500000",
           "completedTasks": 2,
-          "newAgents": 43,
+          "newAgents": 44,
           "activeAgents": 175,
           "paidVolume": "175500000",
           "settlements": 233,
@@ -500,7 +500,7 @@
           "tasksCreated": 51,
           "rewardVolume": "172500000",
           "completedTasks": 2,
-          "newAgents": 43,
+          "newAgents": 44,
           "activeAgents": 175,
           "paidVolume": "175500000",
           "settlements": 233,
@@ -1503,7 +1503,7 @@
           "tasksCreated": 51,
           "rewardVolume": "172500000",
           "completedTasks": 2,
-          "newAgents": 43,
+          "newAgents": 44,
           "activeAgents": 175,
           "paidVolume": "175500000",
           "settlements": 233,
@@ -1945,7 +1945,7 @@
           "tasksCreated": 110,
           "rewardVolume": "300380000",
           "completedTasks": 2,
-          "newAgents": 121,
+          "newAgents": 122,
           "activeAgents": 296,
           "paidVolume": "337330000",
           "settlements": 658,
@@ -4040,7 +4040,7 @@
   "insights": [
     {
       "title": "The market in the last 30 days",
-      "body": "Posters put up $2,339 in rewards across 1,062 tasks, and $976 was paid out across 1,373 settlements. 1,271 new agents joined."
+      "body": "Posters put up $2,339 in rewards across 1,062 tasks, and $976 was paid out across 1,373 settlements. 1,272 new agents joined."
     },
     {
       "title": "Tasks that died",
